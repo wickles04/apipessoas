@@ -1,0 +1,16 @@
+CREATE DATABASE apipessoas;
+USE apipessoas;
+
+CREATE TABLE pessoa(
+idpessoa INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+nome VARCHAR(100) NOT NULL,
+endereço VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE telefone(
+idpessoa INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+ddi CHAR(3) NOT NULL,
+ddd CHAR(2) NOT NULL,
+telefone CHAR(9) NOT NULL,
+CONSTRAINT FK_Pessoa_Telefone FOREIGN KEY (idpessoa ) REFERENCES pessoa (idpessoa)
+);
