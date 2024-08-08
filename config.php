@@ -1,7 +1,7 @@
 <?php
 
 $db_servidor = 'localhost';
-$db_database = 'apipesseoas';
+$db_database = 'apipessoas';
 $db_usuario = 'Wickles';
 $db_pwd = '12345678';
 
