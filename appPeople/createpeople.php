@@ -14,6 +14,7 @@ if ($metodo ==='POST'){
         $sql->bindValue(':endereco', $endereco);
         $sql->execute();
 
+        $array['result']= 'Cadastro criado com sucesso!';
     }else{
         $array['error'] = 'Erro: Valores nulos ou inválidos!';
     }
