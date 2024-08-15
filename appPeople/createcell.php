@@ -29,8 +29,6 @@ if ($metodo ==='POST'){
                 "ddd" => $ddd,
                 "telefone" => $telefone
             ];
-            //$array['result']='Item atualizado com sucesso!';
-
         }else { 
             $array['error'] = 'Erro: Id Inexistente!';
         }
@@ -43,7 +41,4 @@ if ($metodo ==='POST'){
 }
 require('./../return.php');
 
-$sql=$pdo->prepare("INSERT INTO pessoa (nome, endereco) VALUES (:nome,:endereco)");
-        $sql->bindValue(':nome', $nome);
-        $sql->bindValue(':endereco', $endereco);
-        $sql->execute();
+
